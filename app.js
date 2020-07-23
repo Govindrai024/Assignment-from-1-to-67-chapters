@@ -1,4 +1,3 @@
-
 document.write("<hr>");
 document.write("<b>" + "JavaScript Assignment from 1 to 67 Chapters" + "</b>" + "<br>");
 document.write("<hr>");
@@ -1708,8 +1707,7 @@ var hour = 13;
 
 if (hour < 18) {
     greeting = "Good day";
-}
-else {
+} else {
     greeting = "Good evening";
 }
 
@@ -2196,7 +2194,11 @@ document.write("<hr>");
 
 document.write(" 1. Declare and initialize an empty multidimensional array.(Array of arrays)" + "<br><br>");
 
-var multiDemArry = [[],[],[]];
+var multiDemArry = [
+    [],
+    [],
+    []
+];
 
 
 
@@ -2299,7 +2301,7 @@ var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
 
 
 for (var i = 0; i < fruits.length; i++) {
-    document.write("<li>"+fruits[i] +"</li>"+ "<br>");
+    document.write("<li>" + fruits[i] + "</li>" + "<br>");
 }
 
 
@@ -2471,7 +2473,7 @@ for (i = 1; i <= 20; i++) {
 
 document.write("<br><br>");
 document.write("<hr><hr>");
-document.write("<b>"+" End Chapter 17 to 20 "+"</b>");
+document.write("<b>" + " End Chapter 17 to 20 " + "</b>");
 document.write("<hr><hr>");
 document.write("<br><br>");
 //========================== End 
@@ -2668,13 +2670,13 @@ var num = 472;
 var strToNum = Number(str);
 
 //checking data type 
-var strType = typeof (str);
+var strType = typeof(str);
 
 //conveting number to string
 var numToStr = num.toString()
 
 //checking data type 
-var numType = typeof (num);
+var numType = typeof(num);
 
 
 //show in browser
@@ -2915,8 +2917,8 @@ document.write("<b>" + " 18. You have a string “The quick brown fox jumps over
 
 var str = 'The quick brown fox jumps over the lazy dog';
 var match = str.match(/the/gi);
-document.write("Sentence: "+str+"<br>");
-document.write("There are  "+match.length+" occurrance(s) of word "+match+"<br>");
+document.write("Sentence: " + str + "<br>");
+document.write("There are  " + match.length + " occurrance(s) of word " + match + "<br>");
 
 
 
@@ -3492,7 +3494,7 @@ var LatePay = 300;
 
 
 // g. Gross Amount Payable (after Due Date) Where,
-var grossAmount =  netAmount + LatePay;
+var grossAmount = netAmount + LatePay;
 
 
 
@@ -3517,15 +3519,15 @@ var ForMonth = month[current.getMonth()];
 
 
 
-document.write("<b>"+"K-ELECTRICITY BILL"+"</b>"+"<br><br>");
+document.write("<b>" + "K-ELECTRICITY BILL" + "</b>" + "<br><br>");
 
-document.write("Customer name: "+myName+"<br>");
-document.write("Month: "+ForMonth+"<br>");
-document.write("Number of Units: "+numOfUnit+"<br>");
-document.write("Charges per Unit: "+chargePerUnit+"<br>");
-document.write("Net Amount Payable (Within Due Date): "+netAmount+"<br>");
-document.write("Late payment charges: "+LatePay+"<br>");
-document.write("Gross Amount Payable (After Due Date): "+grossAmount+"<br>");
+document.write("Customer name: " + myName + "<br>");
+document.write("Month: " + ForMonth + "<br>");
+document.write("Number of Units: " + numOfUnit + "<br>");
+document.write("Charges per Unit: " + chargePerUnit + "<br>");
+document.write("Net Amount Payable (Within Due Date): " + netAmount + "<br>");
+document.write("Late payment charges: " + LatePay + "<br>");
+document.write("Gross Amount Payable (After Due Date): " + grossAmount + "<br>");
 
 
 
@@ -3560,10 +3562,10 @@ document.write("<b>" + "1. Write a function that displays current date & time in
 
 
 function Time() {
-    var now = new Date() ;
-   
-    document.write("Current time: "+now) ;
-   }
+    var now = new Date();
+
+    document.write("Current time: " + now);
+}
 
 Time();
 
@@ -3582,7 +3584,7 @@ document.write("<b>" + "2. Write a function that takes first & last name and the
 // function greet() {
 //     Fname = ' Rai '
 //     Lname = ' Geo '
-   
+
 //     alert("Welcome "+Fname+Lname) ;
 //    }
 
@@ -3640,7 +3642,7 @@ document.write("<b>" + "4. Calculator: Write a function that takes three argumen
 //     else if(op === '*'){
 //         document.write(num1*num2);
 //     }
-    
+
 //    }
 
 //    Calculator(num1,num2);
@@ -3662,10 +3664,10 @@ document.write("<b>" + "5. Write a function that squares its argument" + "</b>" 
 
 function Square(num) {
     var num = 9;
-    document.write(num*num) ;
-   }
+    document.write(num * num);
+}
 
-   Square(num);
+Square(num);
 
 
 
@@ -3679,18 +3681,18 @@ document.write("<b>" + "6. Write a function that computes factorial of a number.
 
 
 function factorial(num) {
-    if (num < 0) 
-          return -1;
-    else if (num == 0) 
+    if (num < 0)
+        return -1;
+    else if (num == 0)
         return 1;
     else {
         return (num * factorial(num - 1));
     }
-  }
+}
 
-  var f= factorial(5);
+var f = factorial(5);
 
-  document.write("The factorial 5 is: "+f);
+document.write("The factorial 5 is: " + f);
 
 
 
@@ -3711,7 +3713,7 @@ document.write("<b>" + "7. Write a function that take start and end number as in
 //     for(i = CountingStrt; i <= CountingEnd ; i++ ){
 //         document.write([i]+" ");
 //     }
-    
+
 // }
 
 // Counting();
@@ -3734,13 +3736,13 @@ document.write("<b>" + "8. Write a nested function that computes hypotenuse of a
 
 
 // function alculateHypotenuse() {
-    
-    
+
+
 //     function calculateSquare() {
-        
-    
+
+
 //     }
-    
+
 // }
 
 
@@ -3771,7 +3773,7 @@ document.write("<b>" + "9. Write a function that calculates the area of a rectan
 
 //     var Area = widthValue*heightValue;
 //     document.write("Area of rectangle is: "+Area);
-    
+
 // }
 
 // AreaOfRectangle();
@@ -3815,13 +3817,13 @@ document.write("<b>" + "11. Write a JavaScript function that accepts a string as
 // var strNew = 'the quick brown fox';
 
 // function UppercaseOnly() {
-   
+
 //     //to uppercase
 //     var capital = strNew.toUpperCase("The Quick Brown Fox");
 
 //     document.write(capital);
 
-        
+
 // }
 
 // document.write("EXAMPLE STRING: "+strNew +"<br><br>");
@@ -3918,26 +3920,26 @@ function calcCircumference(r) {
     var r = 34;
     var π = 3.14523;
 
-    return (2*r*π);
-    
+    return (2 * r * π);
+
 }
 
- var f= calcCircumference(22);
-document.write("Circumference of circle Is L  "+f+"<br><br>");
+var f = calcCircumference(22);
+document.write("Circumference of circle Is L  " + f + "<br><br>");
 
 
 //Area of circle
 
 function Areaofcircle(r) {
-    
+
     var π = 3.14523;
 
-    return (2*(r*r)*π);
-    
+    return (2 * (r * r) * π);
+
 }
 
- var output = Areaofcircle(44);
-document.write("Area of circle is :  "+output+"<br><br>");
+var output = Areaofcircle(44);
+document.write("Area of circle is :  " + output + "<br><br>");
 
 
 
@@ -3948,6 +3950,98 @@ document.write("<hr>");
 
 
 
+//====================End 
+
+
+
+
+
+//============= Start from Chapter 38 to 42
+
+
+document.write("<hr>" + "<br><br>");
+document.write("<b>" + "Start from Chapter 38 to 42 FUNCTIONS, SWITCH STATEMENTS, WHILE... DO-WHILE LOOPS " + "</b>" + "<br>");
+document.write("<br><br>" + "<hr>");
+
+
+
+document.write("<hr>");
+//======Q1 Start
+
+document.write("<b>" + "1. Write a custom function power ( a, b ), to calculate the value of a raised to b." + "</b>" + "<br><br>");
+
+
+// function power(a,b)
+// {
+//     var value = 1;
+// if (b == undefined) {
+//     b = 2;
+// }
+//     for ( i = 1 ; i <= b ; i ++ )
+//     {
+//         value = value*a;
+//     }
+//     return value;
+// }
+
+// value=power(1,3);
+// document.write(value);
+
+
+
+
+
+
+//======Q2 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "2. Any year is entered through the keyboard. Write a function to determine whether the year is a leap year or not." + "</b>" + "<br><br>");
+
+
+function leapYear(year) {
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+
+var year = leapYear(2012);
+
+document.write("2012 is leap year ? : " + year + "<br>");
+document.write("2016 is leap year ? : " + year + "<br>");
+document.write("2020 is leap year ? : " + year + "<br>");
+
+
+
+
+
+
+
+
+//======Q3 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "3. If the lengths of the sides of a triangle are denoted by a, b, and c, then area of triangle is given by Calculate area of triangle using 2 functions" + "</b>" + "<br><br>");
+
+// area = S(S − a)(S − b)(S − c)
+// where, S = ( a + b + c ) / 2
+
+function funS(a, b, c) {
+
+    var S = (a + b + c) / 2;
+    return S
+}
+
+funS(a, b, c);
+
+function AreaOftriangle() {
+    return funS(16, 4, 7);
+    var area = S * (S - a) * (S - b) * (S - c);
+
+}
+
+document.write("Area of triangle : " + AreaOftriangle());
 
 
 
@@ -3958,7 +4052,715 @@ document.write("<hr>");
 
 
 
-//====================
 
 
 
+//======Q4 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "4. Write a function that receives marks received by a student in 3 subjects and returns the average and percentage of these marks. there should be 3 functions one is the mainFunction and other are for average and percentage. Call those functions from mainFunction and display result in mainFunction." + "</b>" + "<br><br>");
+
+//Subjects
+var sub1 = 154;
+var sub2 = 152;
+var sub3 = 205;
+
+//total marks
+var totalMarks = 800;
+
+
+//main function
+function mainFun() {
+    document.write("<b>" + "Your percentage is: " + "</b><br>" + percentageSub() + "%" + "<br>");
+    document.write("<b>" + "Your average is: " + "</b><br>" + average());
+
+
+}
+
+//function for percentage
+function percentageSub() {
+    per = (((sub1 + sub2 + sub3) * 100) / totalMarks);
+    return per;
+
+}
+
+
+// function for average marks
+function average() {
+    var avg = ((sub1 + sub2 + sub3) / 2);
+    return avg;
+}
+
+//mainfun
+mainFun();
+
+
+
+
+
+
+
+
+
+
+//======Q5 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "5. You have learned the function indexOf. Code your own custom function that will perform the same functionality. You can code for single character as of now." + "</b>" + "<br><br>");
+
+
+// function rmVowel() {
+//     var str = 'This is my pen';
+//     var rmVol = str.replace(/a|e|i|o|u/gi, '');
+
+//     document.write("Orignal sentence: " + str + "<br>");
+//     return rmVol;
+
+// }
+
+
+
+// document.write("Removed vowel sentence: " + rmVowel());
+
+
+
+
+
+
+
+
+
+//======Q6 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "6. Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long." + "</b>" + "<br><br>");
+
+
+function rmVowel() {
+    var str = 'This is my pen';
+    var rmVol = str.replace(/a|e|i|o|u/gi, '');
+
+    document.write("Orignal sentence: " + str + "<br>");
+    return rmVol;
+
+}
+
+
+
+document.write("Removed vowel sentence: " + rmVowel());
+
+
+
+
+
+
+
+//======Q7 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text. For example, in the sentence" + "</b>" + "<br><br>");
+
+//“Pleases read this application and give me gratuity” Such occurrences are ea, ea, ui.
+
+
+function checkOccurrences() {
+    var str = "Pleases read this application and give me gratuity";
+    var chars = str.toLowerCase().split("");
+    var count = 0;
+
+    for (var i = 0; i < chars.length - 1; i++) {
+        var chr = chars[i];
+        var next = chars[i + 1];
+
+
+        if (checkChar(chr) && checkChar(next)) {
+            count++
+        }
+
+    }
+
+
+    return count;
+}
+
+
+function checkChar(char) {
+    switch (char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return true;
+        default:
+            return false;
+    }
+}
+
+var checkforocc = checkOccurrences();
+
+document.write("The occurrences is: " + checkforocc);
+
+
+
+
+
+
+
+
+
+
+
+
+//======Q8 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters." + "</b>" + "<br><br>");
+
+// meters, feet, inches and centimeters.
+
+// var user1 = Number(prompt("The distance of first city: ", "55"));
+// var user2 = Number(prompt("The distance of second city: ", "47"));
+
+
+// //meter
+// function meters() {
+//     var totalMeter = ((user1 + user2) * 1000);
+//     return totalMeter;
+// }
+
+// //feet 
+// function feet() {
+//     var totalFeet = ((user1 + user2) * 3280.84);
+//     return totalFeet;
+// }
+
+// //inches 
+// function inches() {
+//     var totalInches = ((user1 + user2) * 39370.08);
+//     return totalInches;
+// }
+
+// //centimeters
+// function centimeters() {
+//     var totalCentimeters = ((user1 + user2) * 100000);
+//     return totalCentimeters;
+// }
+
+// //mainfun
+
+// function distance() {
+//     document.write("Distance in meters: " + meters() + " m" + "<br>");
+//     document.write("Distance in feet: " + feet() + " ft" + "<br>");
+//     document.write("Distance in inches: " + inches() + " inches" + "<br>");
+//     document.write("Distance in centimeters: " + centimeters() + " cm" + "<br>");
+// }
+
+// distance();
+
+
+
+
+
+
+
+
+//======Q9 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour." + "</b>" + "<br><br>");
+
+// var userWorkHours1 = Number(prompt("Enter working hours: ", "40"));
+
+// function overtimepay() {
+//     var dutyhours = 40;
+//     var overtimePayPerhours = 12.00;
+
+//     if (userWorkHours1 == dutyhours) {
+//         document.write("You worked 40 hours, recieved you reward!");
+
+//     } else {
+//         var calTol = userWorkHours1 * overtimePayPerhours;
+//         document.write("Your overtime payment is: " + calTol + "rupees");
+//     }
+
+// }
+
+// overtimepay();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//======Q10 Start
+
+document.write("<hr>");
+
+
+document.write("<b>" + "10. A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer." + "</b>" + "<br><br>");
+
+
+// //function
+// function cal() {
+//     var amount = Number(prompt("Enter the amount"));
+//     document.write("<b>" + 'You will have ', +(amount / 100) + ' hunderd note ', +((amount % 100) / 50) + ' fifty notes ', (((amount % 100) % 50) / 10) + " ten notes." + "</b>");
+
+// }
+// cal();
+
+
+
+
+
+
+
+
+
+
+document.write("<hr>");
+document.write("<b>" + "End of Chapter 38 to 42 " + "</b>" + "<br>");
+document.write("<hr>");
+
+
+
+//====================End 
+
+
+
+
+
+//============= Start from Chapter 43 to 48
+
+
+document.write("<hr>" + "<br><br>");
+document.write("<b>" + "Start from Chapter 38 to 42 Events " + "</b>" + "<br>");
+document.write("<br><br>" + "<hr>");
+
+
+
+document.write("<hr>");
+//======Q1 Start
+
+document.write("<b>" + "1. Show an alert box on click on a link." + "</b>" + "<br><br>");
+
+//onclick
+// function Fun() {
+//     var get = document.getElementById("demo");
+//     get = alert("Hi I am alert box");
+// }
+
+
+
+
+
+
+
+
+
+//==============Q2 Start
+document.write("<hr>");
+
+
+document.write("<b>" + "2.Display some Mobile images in browser. On click on an image Show the message in alert to user." + "</b>" + "<br><br>");
+
+// //onclick
+// function addcart() {
+//     alert('Thanks for purchasing form us.');
+// }
+
+
+
+
+
+
+
+
+
+//==============Q3 Start
+document.write("<hr>");
+
+
+document.write("<b>" + "3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted." + "</b>" + "<br><br>");
+
+// var records = [
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+
+// ];
+// var recordsName = [
+//     ['index', 'name', 'class']
+// ]
+
+
+// // document.write("<tr>");
+// // document.write("<td>" + records.stdrec1 + "</td>");
+// // document.write("</tr>");
+
+// document.write("<table>");
+
+// for (var i = 0; i < recordsName.length; i++) {
+//     document.write("<tr>");
+//     document.write(
+//         "<th>" + recordsName[i] + "</td>");
+//     for (var j = 0; j < records.length; j++) {
+//         document.write("</tr>");
+//         document.write(
+
+//             "<td>" + [i] + " " + records[i] + "</td>");
+//         document.write("</tr>");
+//     }
+
+//     document.write("</tr>");
+
+// }
+// document.write("</table>");
+
+
+
+
+
+
+
+
+
+
+
+//==============Q4 Start
+document.write("<hr>");
+
+
+document.write("<b>" + "4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout." + "</b>" + "<br><br>");
+
+
+//function of mouse event mouseover
+// function funImg() {
+//     var img = document.getElementById("img1");
+//     img.src = "/img/img2.jpeg";
+// }
+
+//function of mouse event mouseout
+// function funImg2() {
+//     var img = document.getElementById("img1");
+//     img.src = "/img/img1.jpeg";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//==============Q5 Start
+document.write("<hr>");
+
+
+document.write("<b>" + "5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser." + "</b>" + "<br><br>");
+
+
+// var counter = 0;
+
+// //inc
+// function inc() {
+//     counter++;
+//     var incCount = document.getElementById('counter');
+//     incCount.innerHTML = counter;
+// }
+
+// //dec
+// function dec() {
+//     counter--;
+//     var incCount = document.getElementById('counter');
+//     incCount.innerHTML = counter;
+// }
+
+
+
+
+
+
+
+
+
+
+//====================End 
+
+
+
+
+
+//============= Start from Chapter 49 to 52
+
+
+document.write("<hr>" + "<br><br>");
+document.write("<b>" + "Start from Chapter 49 to 52  Events " + "</b>" + "<br>");
+document.write("<br><br>" + "<hr>");
+
+
+
+document.write("<hr>");
+//======Q1 Start
+
+document.write("<b>" + "1. Create a signup form and display form data in your web page on submission." + "</b>" + "<br><br>");
+
+
+// function validity() {
+//     var data = document.getElementById("data");
+//     var email = document.getElementById("email");
+//     var pass = document.getElementById("password");
+//     var repass = document.getElementById("re-password");
+
+
+//     email.value = data;
+//     pass.value = data;
+//     repass.value = data;
+// }
+
+
+
+
+
+
+
+
+
+
+document.write("<hr>");
+//======2 Start
+
+document.write("<b>" + "2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed." + "</b>" + "<br><br>");
+
+
+
+// function readmore() {
+//     var text = ' asdf jlda f l asd fsaflkj asdf ljl kla sdf';
+//     var readMore = document.getElementById("readMore");
+
+//     readMore.innerHTML = text;
+
+// }
+
+
+
+
+
+
+
+
+
+document.write("<hr>");
+//======3 Start
+
+document.write("<b>" + "3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row." + "</b>" + "<br><br>");
+
+
+
+// var records = [
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+//     ['Santosh', 10],
+
+// ];
+// var recordsName = [
+//     ['index', 'name', 'class']
+// ]
+
+
+// // document.write("<tr>");
+// // document.write("<td>" + records.stdrec1 + "</td>");
+// // document.write("</tr>");
+
+// document.write("<table>");
+
+// for (var i = 0; i < recordsName.length; i++) {
+//     document.write("<tr>");
+//     document.write(
+//         "<th>" + recordsName[i] + "</td>");
+//     for (var j = 0; j < records.length; j++) {
+//         document.write("</tr>");
+//         document.write(
+
+//             "<td>" + [i] + " " + records[i] + "</td>");
+//         document.write("</tr>");
+//     }
+
+//     document.write("</tr>");
+
+// }
+// document.write("</table>");
+
+
+
+
+
+
+
+
+
+
+//====================End 
+
+
+
+
+
+//============= Start from Chapter 58 to 67
+
+
+document.write("<hr>" + "<br><br>");
+document.write("<b>" + "Start from Chapter 58 to 67  DOM " + "</b>" + "<br>");
+document.write("<br><br>" + "<hr>");
+
+
+
+document.write("<hr>");
+//======1 Start
+
+document.write("<b>" + "1. Do as mentioned below:" + "</b>" + "<br><br>");
+
+// Get element of id “main-content” and assign them in a variable.
+// Display all child elements of “main-content” element.
+// Get all elements of class “render” and show their innerHTML
+// in browser.
+// iv. Fill input value whose element id first-name using javascript.
+// v. Repeat part iv for id ”last-name” and “email”.
+
+
+// var mainContent = document.getElementById("main-content");
+// var type = mainContent.childNodes[1];
+// var contents = type.innerHTML;
+
+
+// var mainContent = document.getElementById("main-content");
+// var allElement = document.getElementsByClassName("render");
+// var fname = document.getElementsById("first-name");
+// var lname = document.getElementsById("first-name");
+
+// allElement.innerHTML = display;
+// fname.value = 'Alex';
+// lname.value = 'Bank';
+
+
+
+// var children = mainContent.childreen;
+
+// document.write(children)
+
+
+
+
+document.write("<hr>");
+//======1 Start
+
+document.write("<b>" + "use HTML code of question 1 and show the result on browser." + "</b>" + "<br><br>");
+
+
+
+// What is node type of element having id “form-content”.
+// Show node type of element having id “lastName” and its child node.
+// Update child node of element having id “lastName”.
+// Get First and last child of id “main-content”.
+// Get next and previous siblings of id “lastName”.
+// Get parent node and node type of element having id “email”
+
+
+// var node = document.getElementById("form-content").nodeType;
+// var nodetypeLName = document.getElementById("lastName").nodeType;
+
+
+
+// document.getElementById("display").innerHTML = node;
+// document.getElementById("display").innerHTML = nodetypeLName;
+
+
+
+
+
+
+
+
+//====================End 
+
+
+// Extra work file another file
+
+
+//============= Start from Chapter 53 to 57
+
+
+document.write("<hr>" + "<br><br>");
+document.write("<b>" + "Start from Chapter 53 to 57 EVENTS " + "</b>" + "<br>");
+document.write("<br><br>" + "<hr>");
+
+
+document.write("<hr>");
+//======1 Start
+
+document.write("<b>" + "1. Consider you have 4 images in a file as shown below: " + "</b>" + "<br><br>");
+
+// Now When you click on an image it should display in a modal.
+
+// function modal() {
+//     var imges = document.getElementById('imges');
+//     imges.style.width = '50%';
+
+// }
+
+
+
+document.write("<hr>");
+//======1 Start
+
+document.write("<b>" + "2. Create a paragraph and two buttons “zoom in ”(+) and “zoom out”(-). On each click on “zoom in”(+) , add 10px in font size of paragraph. And on each click on “zoom out”(-) , minus 10px in font size of paragraph. " + "</b>" + "<br><br>");
+
+
+
+// function zoomIn() {
+//     var para = document.getElementById("para");
+//     var currWidth = para.clientWidth;
+//     if (currWidth == 2500) return false;
+//     else {
+//         para.style.width = (currWidth + 10) + "px";
+//     }
+// }
+
+// function zoomOut() {
+//     var para = document.getElementById("para");
+//     var currWidth = para.clientWidth;
+//     if (currWidth == 100) return false;
+//     else {
+//         para.style.width = (currWidth - 10) + "px";
+//     }
+// }

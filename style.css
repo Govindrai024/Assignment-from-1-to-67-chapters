@@ -1,5 +1,56 @@
-body{
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    padding:  35px;
+body {
+    padding: 35px;
+}
+
+.mobileimgs {
+    display: inline-flex;
+    border: 1px solid;
+    width: 100%;
+    border: box-sizzing;
+    text-align: center;
+}
+
+.mobileimgs img {
+    display: flex;
+}
+
+.mobileimgs p img {
+    display: flex;
+    width: 70px;
+    height: 100px;
+    margin: 25px;
+    text-align: center;
+}
+
+.imgchng {
+    text-align: center;
+}
+
+.imgchng img {
+    width: 50%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.Counter {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(54, 247, 15);
+    margin: 10px;
+    color: black;
+    border-radius: 30px;
+}
+
+.data {
+    width: 90%;
+    height: 100px;
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.container img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
 }
